@@ -26,9 +26,15 @@ class Smarty {
         vendor('Smarty.Smarty#class');
         $tpl            =   new \Smarty();
         $tpl->caching       = C('TMPL_CACHE_ON');
-        $tpl->template_dir  = THEME_PATH;
+		/*/
+        $tpl->template_dir  = THEME_PATH;//旧版写法
         $tpl->compile_dir   = CACHE_PATH ;
-        $tpl->cache_dir     = TEMP_PATH ;        
+        $tpl->cache_dir     = TEMP_PATH ;
+        /*/
+        $tpl->setTemplateDir(THEME_PATH);//新版写法
+        $tpl->setCompileDir(CACHE_PATH);
+        $tpl->setCacheDir(TEMP_PATH);
+        //*/
         if(C('TMPL_ENGINE_CONFIG')) {
             $config  =  C('TMPL_ENGINE_CONFIG');
             foreach ($config as $key=>$val){
