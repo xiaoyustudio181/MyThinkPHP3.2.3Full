@@ -3,10 +3,11 @@ use `ProjectDB`;
 #mysqldump -uroot -p ProjectDB >D:\backup.sql #备份
 #mysql -u root -p ProjectDB < D:\backup.sql #还原
 #======================================
-create table `table1`
+create table `persons`
 (
 	`id` serial primary key,
     `name` nvarchar(15)
 )engine=innodb;
-insert into `table1`(`name`) values('');
+insert into `persons`(`name`) values('utumaki');
+insert into `persons`(`name`) values('uchiha');
 #======================================
