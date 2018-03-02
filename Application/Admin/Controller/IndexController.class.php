@@ -24,10 +24,10 @@ class IndexController extends Controller {
     }
     #==========================================================
 	function successInfo($msg,$data){
-        return $this->buildJson('Success!',$msg,$data);
+        return $this->buildInfo('Success!',$msg,$data);
     }
     function errorInfo($msg){
-        return $this->buildJson('Error!',$msg,'');
+        return $this->buildInfo('Error!',$msg,'');
     }
     function buildInfo($result,$messsge,$data){
         $arr=['result'=>$result, 'message'=>$messsge, 'data'=>$data];
