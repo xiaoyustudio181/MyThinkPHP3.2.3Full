@@ -1,10 +1,9 @@
 <?php
-namespace Home\Model;
+namespace Admin\Model;
 use Think\Model;
 class Model2 extends Model
 {
     private $M;
-
     public function __construct()
     {
         $this->M = new Model();
