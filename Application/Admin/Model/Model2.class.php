@@ -7,13 +7,14 @@ class Model2 extends Model
     public function __construct()
     {
         $this->M = new Model();
-        $this->persons=M('persons');
+        $this->departments=M('departments');
     }
-    public function select1(){
-        #return $this->M->query('select * from persons;');
-        return $this->persons->select();
+    public function select_(){
+        #return $this->M->query('select * from `departments`;');
+        return $this->departments->select();
     }
-    public function execute1(){
-        $this->M->execute('update persons set name="uchiha sasuke" where id=2;');
+    public function execute_(){
+        #$this->M->execute('update `departments` set `name`="部门二" where `id`=2;');
+        $this->departments->where(['id'=>2])->save(['name'=>'部门二-1']);
     }
 }

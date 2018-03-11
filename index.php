@@ -10,6 +10,7 @@ define('UPLOAD',dirname(APP_PATH).DS.'Public'.DS.'upload'.DS);//服务器访问�
 define('IMG',dirname(APP_PATH).DS.'Public'.DS.'img'.DS);//画验证码用
 if(dirname($_SERVER['SCRIPT_NAME'])==DS)define('PUB','/Public/');//浏览器访问（网站根目录相对路径）
 else define('PUB',dirname($_SERVER['SCRIPT_NAME']).'/Public/');//浏览器访问（网站根目录相对路径）
+define('IP','127.0.0.1');#网站根目录
 //====================================================
 //路径测试
 /*echo _PUBLIC;echo '<br />';

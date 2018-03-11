@@ -3,34 +3,46 @@ namespace Admin\Controller;
 use Think\Controller;
 use Admin\Model\Model2;
 class IndexController extends Controller {
-    #private $persons;
+    #private $department;
     #private $M;
     public function __construct()
     {
         parent::__construct();
-        /*header("Access-Control-Allow-Origin:*");#ajax访问用
-        header("Access-Control-Allow-Methods:GET,POST");#ajax访问用*/
-        $this->persons=M('persons');
+        $this->departments=M('departments');
         $this->M=new Model2();
     }
     public function index(){
-        #$id=$this->persons->getlastInsID();#after insert
-        $this->assign([
-            'persons'=>
-            #$this->persons->select()
-                $this->M->select1()
-        ]);
+        $this->redirect('Admin/Index/testpage');
         $this->display();
     }
-    #==========================================================
-	function successInfo($msg,$data){
-        return $this->buildInfo('Success!',$msg,$data);
+    public function testpage(){
+        #$id=$this->departments->getlastInsID();#after insert
+        echo '测试页面<br />';
+        //普通查询测试
+        $test=$this->departments->select();
+        $test=$this->M->select_();
+        #$this->M->execute_();
+
+        //模型关联查询测试
+        $d_departments=D('departments');
+        #$test=$d_departments->relation(true)->select();
+
+        $d_employees=D('employees');
+        #$test=$d_employees->relation(true)->select();
+
+        dump($test);
+
+        //CURL调用测试
+        $url=U('Admin/Index/testcurl');
+        $result=curl($url);
+        $result=json_decode($result);
+        dump($result);
+
+        $this->assign([
+            'departments'=>[]
+        ]);
     }
-    function errorInfo($msg){
-        return $this->buildInfo('Error!',$msg,'');
-    }
-    function buildInfo($result,$messsge,$data){
-        $arr=['result'=>$result, 'message'=>$messsge, 'data'=>$data];
-        return json_encode($arr);
+    public function testcurl(){
+        echo successInfo('返回的数据',['val'=>135]);
     }
 }
