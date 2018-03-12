@@ -1,14 +1,18 @@
 <?php
 #==================================================================
 #封装公共的CURL函数，供后端调用页面。
-function curl($url){
+function curl($url,$postdata=[]){
     $curl = curl_init();
     $url='http://'.IP.$url;
     curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-    
-    if( ! $result = curl_exec($curl))
+    if($postdata){
+        curl_setopt($curl, CURLOPT_POST, 1);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($postdata));
+        #http_build_query可封装多维数组
+    }
+    if(!$result=curl_exec($curl))
     {
         dump(curl_error($curl));
     }
