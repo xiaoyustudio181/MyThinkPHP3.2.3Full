@@ -6,12 +6,18 @@ define('APP_PATH','./Application/');// 定义应用目录
 //====================================================
 #define('BIND_MODULE','Admin');//绑定入口文件到Admin模块访问，首次运行生成目录。
 define('DS', DIRECTORY_SEPARATOR);
-define('UPLOAD',dirname(APP_PATH).DS.'Public'.DS.'upload'.DS);//服务器访问（文件系统绝对路径）
-define('IMG',dirname(APP_PATH).DS.'Public'.DS.'img'.DS);//画验证码用
-if(dirname($_SERVER['SCRIPT_NAME'])==DS)define('PUB','/Public/');//浏览器访问（网站根目录相对路径）
-else define('PUB',dirname($_SERVER['SCRIPT_NAME']).'/Public/');//浏览器访问（网站根目录相对路径）
-define('IP','127.0.0.1');#网站根目录
-//====================================================
+
+if(dirname($_SERVER['SCRIPT_NAME'])==DS)//项目在网站根目录下
+    define('PUB','/Public/');//供浏览器访问（网站根目录相对路径）
+else//项目在网站根目录下的一个目录下
+    define('PUB',dirname($_SERVER['SCRIPT_NAME']).'/Public/');
+
+define('UPLOAD',dirname(APP_PATH).DS.'Public'.DS.'upload'.DS);//供服务器访问（文件系统绝对路径）
+define('IMG',dirname(APP_PATH).DS.'Public'.DS.'img'.DS);//供服务器访问（画验证码用）
+
+
+define('IP','127.0.0.1');#网站根目录的地址
+#//====================================================
 //路径测试
 /*echo _PUBLIC;echo '<br />';
 echo(realpath('.'));echo '<br />';//“.”是从本地磁盘根目录计算到网站根目录。
