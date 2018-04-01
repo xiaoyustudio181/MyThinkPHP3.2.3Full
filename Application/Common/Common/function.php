@@ -20,7 +20,7 @@ function curl($url,$postdata=[]){
     return $result;
 }
 #==================================================================
-function prepareAjax(){#供前端ajax访问用
+function prepareAjax(){#供前端ajax跨域访问用
     header("Access-Control-Allow-Origin:*");
     header("Access-Control-Allow-Methods:GET,POST");
 }

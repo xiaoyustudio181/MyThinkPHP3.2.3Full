@@ -42,7 +42,23 @@ class IndexController extends Controller {
             'departments'=>[]
         ]);
     }
+    public function testajax(){
+        $this->display();
+    }
     public function testcurl(){
         echo successInfo('返回的数据',['val'=>135]);
+    }
+    public function ajax_test(){
+        if(I('get.id')){
+            $department=$this->departments->where(['id'=>I('get.id')])->select()[0];
+            echo successInfo('指定部门的数据。',$department);
+        }else{
+            $departments=$this->departments->select();
+            echo successInfo('所有部门的数据。',$departments);
+        }
+        if(I('post.name')){
+            $this->departments->add(['name'=>I('post.name')]);
+            echo successInfo('新增部门成功。','');
+        }
     }
 }
