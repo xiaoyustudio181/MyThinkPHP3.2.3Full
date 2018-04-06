@@ -10,9 +10,10 @@
 
 </body>
 <script>
-    new AjaxHelper('get','Index/ajax_test',{
-        id:2},function (data) {
-        console.log(data);
+    AjaxHelper('get','Index/ajax_test',{
+        id:1
+    },function (result) {
+        console.log(result);
     },1,0);
 </script>
 </html>
