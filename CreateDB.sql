@@ -18,7 +18,7 @@ drop table if exists `employees`;
 create table `employees`
 (
 	`id` serial primary key,
-    `departmentid` bigint,
+    `departmentid` bigint unsigned,
 	`deleted` boolean default 0
 )engine=innodb;
 insert into `employees`(`departmentid`) values
