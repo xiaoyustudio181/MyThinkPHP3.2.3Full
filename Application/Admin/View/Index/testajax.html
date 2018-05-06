@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <title>Ajax测试</title>
     <script src="{PUB}jquery-3.0.0.min.js"></script>
-    <script src="{PUB}AjaxHelper.js"></script>
 </head>
 <body>
 
 </body>
 <script>
-    AjaxHelper('get','Index/ajax_test',{
+    $.get('/index.php/Admin/Index/ajax_test.html',{
         id:1
     },function (result) {
         console.log(result);
-    });
+    },'json');
 </script>
 </html>
