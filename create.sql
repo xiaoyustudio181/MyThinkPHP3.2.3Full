@@ -1,4 +1,4 @@
-#create database `company1` default character set utf8 collate utf8_general_ci;
+create database `company1` default character set utf8 collate utf8_general_ci;
 #drop database `company1`;
 use `company1`;
 #mysqldump -uroot company1 >D:\company1.bak #备份(-p password)
@@ -27,7 +27,7 @@ insert into `employees`(`departmentid`) values
 drop table if exists `profiles`;
 create table `profiles`
 (
-    `employeeid` bigint unsigned unique,
+    `employeeid` bigint unsigned unique not null,
     `name` nvarchar(6),
     `gender` boolean,
     `age` tinyint unsigned
