@@ -1,8 +1,8 @@
 create database `company1` default character set utf8 collate utf8_general_ci;
 #drop database `company1`;
 use `company1`;
-#mysqldump -uroot company1 >D:\company1.bak #备份(-p password)
-#mysql -uroot company1 < D:\company1.bak #还原(-p password)
+#mysqldump -uroot company1 >D:\company1.bak -p  #备份
+#mysql -uroot company1 < D:\company1.bak -p  #还原
 #======================================
 drop table if exists `departments`;
 create table `departments`
