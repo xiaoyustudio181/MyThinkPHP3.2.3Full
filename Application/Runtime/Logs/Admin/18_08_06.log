@@ -1,0 +1,615 @@
+[ 2018-08-06T16:07:27+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2018-08-06T16:09:11+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'company1'
+
+[ 2018-08-06T16:13:59+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+
+[ 2018-08-06T16:13:59+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:15:31+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0070s ]
+ERR: 1054:Unknown column 'departmentid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `employees` WHERE ( 1=1 AND departmentid='1' ) 
+ERR: 1054:Unknown column 'departmentid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `employees` WHERE ( 1=1 AND departmentid='1' ) 
+
+[ 2018-08-06T16:15:37+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `employees` WHERE ( 1=1 AND department_id='1' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `employees` WHERE ( 1=1 AND department_id='2' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-06T16:16:12+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `employees`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `profiles` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `profiles` WHERE ( 1=1 AND employee_id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `profiles` WHERE ( 1=1 AND employee_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `profiles` WHERE ( 1=1 AND employee_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `profiles` WHERE ( 1=1 AND employee_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:16:21+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-08-06T16:16:29+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:16:30+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-06T16:17:16+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:17:34+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:20:24+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-08-06T16:20:25+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:20:26+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:20:26+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-06T16:20:27+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:21:14+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-06T16:22:22+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-06T16:22:52+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:22:52+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:22:53+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:22:53+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-06T16:23:46+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2018-08-06T16:23:49+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-06T16:24:30+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-08-06T16:24:46+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/test_curl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:24:46+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-06T16:25:06+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/test_curl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:25:06+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:25:15+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/test_curl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:25:15+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:26:06+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/test_curl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-08-06T16:26:06+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `employees`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `profiles` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `profiles` WHERE ( 1=1 AND employee_id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `profiles` WHERE ( 1=1 AND employee_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `departments` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `profiles` WHERE ( 1=1 AND employee_id='3' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `departments` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `profiles` WHERE ( 1=1 AND employee_id='4' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:26:13+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/test_curl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-06T16:26:13+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `employees` WHERE ( 1=1 AND department_id='1' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `employees` WHERE ( 1=1 AND department_id='2' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-08-06T16:26:38+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `employees` WHERE ( 1=1 AND department_id='1' )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `employees` WHERE ( 1=1 AND department_id='2' )  [ RunTime:0.0010s ]
+
+[ 2018-08-06T16:27:27+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2018-08-06T16:27:31+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/test_curl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-06T16:27:32+08:00 ] ::1 /MyThinkPHP3.2.3Full/index.php/Admin/Index/testpage.html?XDEBUG_SESSION_START=16533
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `departments` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `departments`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `employees` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `employees` WHERE ( 1=1 AND department_id='1' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `employees` WHERE ( 1=1 AND department_id='2' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+

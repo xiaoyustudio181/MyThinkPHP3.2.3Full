@@ -23,19 +23,19 @@ class IndexController extends Controller
 
     public function testpage()
     {
-        #$id=$this->departments->getlastInsID();#after insert
+//        $id=$this->departments->getlastInsID();#after insert
         echo '测试页面<br />';
         //普通查询测试
         $test = $this->departments->select();
-        $test = $this->M->select_();
-        #$this->M->execute_();
+//        $test = $this->M->select_();
+//        $this->M->execute_();
 
         //模型关联查询测试
         $d_departments = D('departments');
-        #$test=$d_departments->relation(true)->select();
+        $test=$d_departments->relation(true)->select();
 
         $d_employees = D('employees');
-        #$test=$d_employees->relation(true)->select();
+//        $test=$d_employees->relation(true)->select();
 
         dump($test);
 
@@ -60,7 +60,7 @@ class IndexController extends Controller
      * */
     public function test_curl()
     {
-        json(true, '返回的数据', ['val' => 135]);
+        json(true, '返回的数据', ['id' => 100]);
     }
 
     /*

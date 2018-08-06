@@ -6,11 +6,11 @@ class EmployeesModel extends RelationModel{
     protected $_link=[
         'departments'=>[
             'mapping_type'=>self::BELONGS_TO,
-            'foreign_key'=>'departmentid'
+            'foreign_key'=>'department_id'
         ],
         'profiles'=>[
             'mapping_type'=>self::HAS_ONE,
-            'foreign_key'=>'employeeid'
+            'foreign_key'=>'employee_id'
         ]
     ];
 }

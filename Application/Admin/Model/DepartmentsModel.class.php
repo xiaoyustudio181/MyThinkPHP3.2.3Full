@@ -6,7 +6,7 @@ class DepartmentsModel extends RelationModel{
     protected $_link=[
         'employees'=>[
             'mapping_type'=>self::HAS_MANY,
-            'foreign_key'=>'departmentid'
+            'foreign_key'=>'department_id'
         ]
     ];
 }

@@ -16,7 +16,7 @@ define('UPLOAD',dirname(APP_PATH).DS.'Public'.DS.'upload'.DS);//供服务器访�
 define('IMG',dirname(APP_PATH).DS.'Public'.DS.'img'.DS);//供服务器访问（画验证码用）
 
 
-define('DOMAIN','127.0.0.1');#网站根目录的地址
+define('DOMAIN','localhost');#网站根目录的地址
 #//====================================================
 //路径测试
 /*echo _PUBLIC;echo '<br />';
